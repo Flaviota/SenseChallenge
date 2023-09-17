@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components'; // Importe styled-components
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.css';
+import Img from '../../img/img_login.svg'
+
 
 
 const LoginPage = ({ setIsAuthenticated, setActive }) => { // Recebe setIsAuthenticated como propriedade
@@ -10,7 +12,7 @@ const LoginPage = ({ setIsAuthenticated, setActive }) => { // Recebe setIsAuthen
   
     const handleLogin = () => {
       if (username === 'flaviota' && password === 'flaviota') {
-        // Autenticação bem-sucedida, você pode definir a autenticação como verdadeira aqui.
+        // Autenticação bem-sucedida
         const Toast = Swal.mixin({
             toast: true,
             position: 'top-end',
@@ -47,8 +49,15 @@ const LoginPage = ({ setIsAuthenticated, setActive }) => { // Recebe setIsAuthen
       <div className="main-login">
         <div className="left-login">
           <h1>Faça login<br />E entre para o nosso time</h1>
-          <img src="./img/investment.svg" className="left-login-image" alt="Investiment animation" />
+          <img src={Img}
+          width="600vh"
+          />
+          
+          
         </div>
+      
+
+
         <div className="right-login">
           <div className="card-login">
             <h1>LOGIN</h1>
