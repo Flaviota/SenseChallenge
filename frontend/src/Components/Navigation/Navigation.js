@@ -6,6 +6,7 @@ import { menuItems } from '../../utils/menuItems'
 
 function Navigation({active, setActive}) {
     
+    //Navegação principal
     return (
         <NavStyled>
             <div className="user-con">
