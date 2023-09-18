@@ -193,6 +193,7 @@ const LoginPage = ({ setIsAuthenticated, setActive }) => {
         padding: 16px 0px;
         margin: 25px;
         border: none;
+        font-size: 20px;
         border-radius: 18px;
         outline: none;
         text-transform: uppercase;
