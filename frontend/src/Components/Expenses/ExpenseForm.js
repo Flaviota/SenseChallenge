@@ -128,7 +128,7 @@ const ExpenseFormStyled = styled.form`
         display: flex;
         justify-content: flex-end;
         select{
-            color: rgba(34, 34, 96, 0.4);
+            color: rgba(70, 70, 139, 0.4);
             &:focus, &:active{
                 color: rgba(34, 34, 96, 1);
             }

@@ -36,10 +36,10 @@ const NavStyled = styled.nav`
     padding: 2rem 1.5rem;
     width: 374px;
     height: 100%;
-    background: rgba(252, 246, 249, 0.78);
+    background: rgba(229, 233, 224, 0.78);
     border: 3px solid #FFFFFF;
     backdrop-filter: blur(4.5px);
-    border-radius: 32px;
+    border-radius: 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,7 +84,7 @@ const NavStyled = styled.nav`
             position: relative;
             i{
                 color: rgba(34, 34, 96, 0.6);
-                font-size: 1.4rem;
+                font-size: 1.6rem;
                 transition: all .4s ease-in-out;
             }
         }

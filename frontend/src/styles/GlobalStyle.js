@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
         --color-accent: #F56692;
         --color-delete: #FF0000;
         --color-purple:#7971f1;
+        --color-green-ligth: #69925a;
     }
 
     body{

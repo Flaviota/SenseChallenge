@@ -25,13 +25,13 @@ function Dashboard() {
                         <Chart />
                         <div className="amount-con">
                             <div className="income">
-                                <h2>Total de gastos</h2>
+                                <h2>Total de ganhos</h2>
                                 <p>
                                     {real_brasilian} {totalIncome()}
                                 </p>
                             </div>
                             <div className="expense">
-                                <h2>Total de ganhos</h2>
+                                <h2>Total de gastos</h2>
                                 <p>
                                     {real_brasilian} {totalExpenses()}
                                 </p>
