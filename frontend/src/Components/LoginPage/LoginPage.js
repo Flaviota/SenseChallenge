@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import styled from 'styled-components'; // Importe styled-components
+import styled from 'styled-components'; 
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.css';
 import Img from '../../img/img_login.svg'
 
 
-
-const LoginPage = ({ setIsAuthenticated, setActive }) => { // Recebe setIsAuthenticated como propriedade
+//Recebendo setIsAuthenticated como propriedade
+const LoginPage = ({ setIsAuthenticated, setActive }) => { 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
   
@@ -25,7 +25,7 @@ const LoginPage = ({ setIsAuthenticated, setActive }) => { // Recebe setIsAuthen
             icon: 'success',
             title: 'Login bem-sucedido!'
           }).then(() => {
-            setIsAuthenticated(true); // Define como autenticado usando a propriedade passada
+            setIsAuthenticated(true); 
             setActive(1); 
         })
       } else {
@@ -49,15 +49,9 @@ const LoginPage = ({ setIsAuthenticated, setActive }) => { // Recebe setIsAuthen
       <div className="main-login">
         <div className="left-login">
           <h1>Faça login<br />E entre para o nosso time</h1>
-          <img src={Img}
-          width="600vh"
-          />
-          
-          
+          <img src={Img}/>
         </div>
       
-
-
         <div className="right-login">
           <div className="card-login">
             <h1>LOGIN</h1>
@@ -66,7 +60,7 @@ const LoginPage = ({ setIsAuthenticated, setActive }) => { // Recebe setIsAuthen
               <input
                 type="text"
                 name="usuario"
-                placeholder="Usuário"
+                placeholder="Digite o usuário"
                 id="login"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
@@ -77,7 +71,7 @@ const LoginPage = ({ setIsAuthenticated, setActive }) => { // Recebe setIsAuthen
               <input
                 type="password"
                 name="senha"
-                placeholder="Senha"
+                placeholder="Digite sua senha"
                 id="senha"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -91,7 +85,7 @@ const LoginPage = ({ setIsAuthenticated, setActive }) => { // Recebe setIsAuthen
   );
 };
 
-  // Use a função styled para definir estilos CSS para seus componentes
+  //Styled para definir os estilos do login
   const LoginPageWrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -102,23 +96,27 @@ const LoginPage = ({ setIsAuthenticated, setActive }) => { // Recebe setIsAuthen
     box-shadow: 0px 10px 40px #00000056;
     color: #00ff88;
 
+    body * {
+      box-sizing: border-box;
+    }
+
     h1 {
       font-size: 3vw;
-      color: #77ffc0;
+      color: #15291f;
     }
 
     .main-login {
       width: 100vW;
       height: 100vh;
-      background: #201b2c;
+      background: #ecfaed;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
     .left-login {
-      width: 50vw;
-      height: 100vh;
+      width: 50rem;
+      height: 50vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -127,6 +125,11 @@ const LoginPage = ({ setIsAuthenticated, setActive }) => { // Recebe setIsAuthen
 
     .left-login-image {
       width: 35vw;
+    }
+
+    .left-login img{
+      padding-top: 40px;
+      
     }
 
     .right-login {
@@ -144,12 +147,12 @@ const LoginPage = ({ setIsAuthenticated, setActive }) => { // Recebe setIsAuthen
       align-items: center;
       flex-direction: column;
       padding: 30px 35px;
-      background: #2f2841;
+      background: #88c082;
       border-radius: 20px;
       box-shadow: 0px 10px 40px #00000056;
 
       h1 {
-        color: #00ff88;
+        color: #15291f;
         font-weight: 800;
         margin: 0;
       }
@@ -167,44 +170,45 @@ const LoginPage = ({ setIsAuthenticated, setActive }) => { // Recebe setIsAuthen
           border: none;
           border-radius: 10px;
           padding: 15px;
-          background: #514869;
-          color: #f0ffffde;
-          font-size: 12pt;
-          box-shadow: 0px 10px 40px #00000056;
+          background: #e9f3ecd3;
+          color: #0a0a0ab4;
+          font-size: 14pt;
           outline: none;
           box-sizing: border-box;
         }
 
         label {
-          color: #f0ffffde;
+          color: #252727d8;
           margin-bottom: 10px;
         }
 
         input::placeholder {
-          color: #f0ffff94;
+          color: #25272781;
         }
       }
 
       .btn-login {
+        font-weight: bold;
         width: 100%;
         padding: 16px 0px;
         margin: 25px;
         border: none;
-        border-radius: 8px;
+        border-radius: 18px;
         outline: none;
         text-transform: uppercase;
         letter-spacing: 3px;
-        color: #2b134b;
-        background: #00ff88;
+        color: #dfdae6;
+        background: #484b499c;
         cursor: pointer;
-        box-shadow: 0px 10px 40px -12px #00ff8052;
+        box-shadow: 0px 10px 40px -12px #e1f3e89d;
       }
     }
 
     button:hover {
-      background-color: #00cc66;
+      background-color: #ffffff56;
     }
 
+    //Media queries para responsividade 
     @media only screen and (max-width: 950px) {
       .card-login {
         width: 85%;
