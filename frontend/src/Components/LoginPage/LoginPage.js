@@ -178,6 +178,7 @@ const LoginPage = ({ setIsAuthenticated, setActive }) => {
         }
 
         label {
+          font-size: 25px;
           color: #252727d8;
           margin-bottom: 10px;
         }

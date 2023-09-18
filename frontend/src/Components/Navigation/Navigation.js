@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import avatar from '../../img/avatar.png'
+import profile from '../../img/profile.png'
 import { signout } from '../../utils/Icons'
 import { menuItems } from '../../utils/menuItems'
 
@@ -9,7 +9,7 @@ function Navigation({active, setActive}) {
     return (
         <NavStyled>
             <div className="user-con">
-                <img src={avatar} alt="" />
+                <img src={profile} alt="" />
                 <div className="text">
                     <h2>Flávia Rodrigues</h2>
                     <p>Controle de gastos</p>
@@ -27,11 +27,7 @@ function Navigation({active, setActive}) {
                     </li>
                 })}
             </ul>
-            <div className="bottom-nav">
-                <li>
-                    {signout} Sign Out
-                </li>
-            </div>
+            
         </NavStyled>
     )
 }

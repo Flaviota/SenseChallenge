@@ -15,7 +15,7 @@ function Dashboard() {
     }, [])
 
 
-    //definindo como será a visão geral do usuário
+    //Styled geral de Visão geral e Dashboard
     return (
         <DashboardStyled>
             <InnerLayout>
@@ -88,7 +88,7 @@ const DashboardStyled = styled.div`
                     grid-column: span 2;
                 }
                 .income, .expense, .balance{
-                    background: #FCF6F9;
+                    background: #d1dfcc;
                     border: 2px solid #FFFFFF;
                     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
                     border-radius: 20px;
@@ -106,7 +106,7 @@ const DashboardStyled = styled.div`
                     justify-content: center;
                     align-items: center;
                     p{
-                        color: var(--color-green);
+                        color: var(--color-purple);
                         opacity: 0.6;
                         font-size: 4.5rem;
                     }
@@ -123,14 +123,15 @@ const DashboardStyled = styled.div`
                 justify-content: space-between;
             }
             .salary-title{
+               
                 font-size: 1.2rem;
                 span{
                     font-size: 1.8rem;
                 }
             }
             .salary-item{
-                background: #FCF6F9;
-                border: 2px solid #FFFFFF;
+                background: #9faf99;
+                border: 1px solid #FFFFFF;
                 box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
                 padding: 1rem;
                 border-radius: 20px;
