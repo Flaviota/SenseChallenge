@@ -11,7 +11,7 @@ const LoginPage = ({ setIsAuthenticated, setActive }) => {
     const [password, setPassword] = useState('');
   
     const handleLogin = () => {
-      if (username === 'flaviota' && password === 'flaviota') {
+      if (username === 'SenseData' && password === '123456') {
         // Autenticação bem-sucedida
         const Toast = Swal.mixin({
             toast: true,
